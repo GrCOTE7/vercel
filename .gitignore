@@ -3,3 +3,5 @@ node_modules
 .env
 .vercel
 .git
+index_copy.js
+google.js
