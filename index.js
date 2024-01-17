@@ -36,8 +36,12 @@ app.get("/api", async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Server started on http://localhost:3000/api");
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  /* eslint-disable no-console */
+  console.log(`Listening: http://localhost:${port}/api`);
+  /* eslint-enable no-console */
 });
+
 
 module.exports = app;
